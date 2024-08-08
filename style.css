@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./src/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik-italic';
+  src: url('./src/fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
