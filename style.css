@@ -16,4 +16,9 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  color: #fff;
+}
+
+.vsc-initialized {
+  display: block;
 }

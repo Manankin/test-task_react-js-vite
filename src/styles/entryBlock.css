@@ -1,0 +1,44 @@
+.entryBlock {
+  background-repeat: no-repeat;
+
+  background: rgba(50, 38, 89, 0.5), url('../assets/rocketFrame.webp');
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+
+.entryBlock__text {
+  margin-top: 48px;
+  margin-left: 32px;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.entryBlock__loading {
+  margin-top: 84px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.loading {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.loading__logo {
+  width: 34px;
+  height: 34px;
+  background-image: url('../assets/globus-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loading__progress-bar {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}

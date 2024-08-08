@@ -1,0 +1,12 @@
+.rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.rockets__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+}

@@ -1,8 +1,8 @@
 #root {
   max-width: 1440px;
   margin: 0 auto;
-
-  background-color: #000;
 }
 
-
+.page {
+  background-color: #000;
+}
