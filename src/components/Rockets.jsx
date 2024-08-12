@@ -1,23 +1,18 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import 'swiper/modules/navigation.scss';
 import '../styles/rockets.scss';
 
 import Card from './Card';
-import { useState } from 'react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Rockets() {
-  const [swiper, setSwiper] = useState();
-
   return (
     <div className="rockets">
       <h2 className="rockets__title">Our rockets</h2>
-      <div>
+      <div className='rocets__swiper'>
         <Swiper
-          onSwiper={setSwiper}
           modules={[Navigation, Pagination]}
           slidesPerView={3}
           spaceBetween={20}
@@ -29,8 +24,7 @@ export default function Rockets() {
           pagination={{
             el: '.rockets__pagination',
             type: 'bullets',
-            // dynamicBullets: true,
-            clickable: true,
+            // clickable: true,
           }}
           swipeHandler={'.rockets__pagination'}
           // pagination
@@ -41,7 +35,6 @@ export default function Rockets() {
           <SwiperSlide> <Card/> </SwiperSlide>
           <SwiperSlide> <Card/> </SwiperSlide>
           <div className="rockets__pagination swiper-pagination"></div>
-          
         </Swiper>
       </div>
 

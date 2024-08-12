@@ -19,7 +19,7 @@ export default function Team() {
       <div className="team__members">
         <Swiper
           modules={[Navigation]}
-          slidesPerView={2.2}
+          slidesPerView={2.1}
           spaceBetween={20}
           slidesPerGroup={1}
           navigation={{
