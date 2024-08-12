@@ -1,4 +1,4 @@
-import '../styles/main.css';
+import '../styles/main.scss';
 import About from './About';
 import EntryBlock from './EntryBlock';
 import Info from './Info';

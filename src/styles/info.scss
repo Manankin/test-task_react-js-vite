@@ -1,0 +1,23 @@
+.info {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+
+  &__item {
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+
+    &-amount {
+      font-weight: 700;
+      font-size: 64px;
+    }
+    
+    &-text {
+      margin-top: 32px;
+      font-weight: 400;
+      font-size: 32px;
+    }
+  }
+}

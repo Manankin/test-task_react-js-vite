@@ -1,4 +1,4 @@
-import '../styles/entryBlock.css';
+import '../styles/entryBlock.scss';
 import Header from './Header';
 
 export default function EntryBlock() {

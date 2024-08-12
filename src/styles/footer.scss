@@ -1,0 +1,59 @@
+@import 'swiper/css';
+
+.footer {
+  height: min(834px, 100vh);
+
+  &__slide {
+    position: relative;
+  }
+
+  &__img-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    & img {
+      object-fit: contain;
+    }
+  }
+
+  &__slide-info {
+    font-family: "Rubik", sans-serif;
+    margin-top: 436px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 126px;
+    width: 432px;
+    margin-left: 60px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1;
+  }
+
+  &__describe {
+    z-index: 1;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 171%;
+    color: #fff;
+  }
+
+  & swiper-pagination {
+    position: absolute;
+    bottom: 32px;
+    left: auto;
+    right: auto;
+    height: 32px;
+  }
+}

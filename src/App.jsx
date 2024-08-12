@@ -1,9 +1,9 @@
-import './styles/App.css'
+import './styles/App.scss'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import getData from './features/getData'
-import Footer from './compoents/Footer'
-import Main from './compoents/main'
+import Footer from './components/Footer'
+import Main from './components/main'
 
 export default function App() {
   const [response, setResponse] = useState(null)

@@ -22,3 +22,16 @@ body {
 .vsc-initialized {
   display: block;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@import 'swiper/css';
+@import './src/index.scss';
