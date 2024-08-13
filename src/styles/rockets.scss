@@ -59,6 +59,7 @@
     width: 62px;
     height: 62px;
     color: #fff;
+    z-index: 50;
 
     &::after {
       content: '';
@@ -81,6 +82,8 @@
     width: 62px;
     height: 62px;
     color: #fff;
+
+    z-index: 50;
 
     &::after {
       content: '';

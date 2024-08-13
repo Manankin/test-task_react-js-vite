@@ -6,6 +6,7 @@ import '../styles/rockets.scss';
 import Card from './Card';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 export default function Rockets() {
   return (
@@ -18,33 +19,47 @@ export default function Rockets() {
           spaceBetween={20}
           slidesPerGroup={1}
           navigation
-          // navigation={{
-          //   prevEl: '.rockets__navigation-left',
-          //   nextEl: '.rockets__navigation-right',
-          // }}
           pagination={{
             el: '.rockets__pagination',
             type: 'bullets',
-            // clickable: true,
           }}
-          // swipeHandler={'.rockets__pagination'}
-          // pagination
         >
-          <SwiperSlide> <Card/> </SwiperSlide>
-          <SwiperSlide> <Card/> </SwiperSlide>
-          <SwiperSlide> <Card/> </SwiperSlide>
-          <SwiperSlide> <Card/> </SwiperSlide>
-          <SwiperSlide> <Card/> </SwiperSlide>
+          <SwiperSlide>
+            <Link to='/rocket-info'>
+              <Card/>
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Link to='/rocket-info'>
+              <Card/>
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Link to='/rocket-info'>
+              <Card/>
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Link to='/rocket-info'>
+              <Card/>
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Link to='/rocket-info'>
+              <Card/>
+            </Link>
+          </SwiperSlide>
+
 
           <div className="rockets__navigation swiper__nav">
-            {/* <div className="rockets__navigation-left"></div> */}
             <div className="rockets__pagination swiper-pagination"></div>
-            {/* <div className="rockets__navigation-right"></div> */}
           </div>
         </Swiper>
       </div>
-
-
     </div>
   )
 }
