@@ -25,7 +25,6 @@ export default function Team() {
           navigation={{
             prevEl: '.navigation__btn--left',
             nextEl: '.navigation__btn--right',
-            // disabledClass: false,
           }}
         >
           <SwiperSlide>

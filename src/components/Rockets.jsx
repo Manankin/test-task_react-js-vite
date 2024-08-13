@@ -17,16 +17,17 @@ export default function Rockets() {
           slidesPerView={3}
           spaceBetween={20}
           slidesPerGroup={1}
-          navigation={{
-            prevEl: '.rockets__navigation-left',
-            nextEl: '.rockets__navigation-right',
-          }}
+          navigation
+          // navigation={{
+          //   prevEl: '.rockets__navigation-left',
+          //   nextEl: '.rockets__navigation-right',
+          // }}
           pagination={{
             el: '.rockets__pagination',
             type: 'bullets',
             // clickable: true,
           }}
-          swipeHandler={'.rockets__pagination'}
+          // swipeHandler={'.rockets__pagination'}
           // pagination
         >
           <SwiperSlide> <Card/> </SwiperSlide>
@@ -34,14 +35,15 @@ export default function Rockets() {
           <SwiperSlide> <Card/> </SwiperSlide>
           <SwiperSlide> <Card/> </SwiperSlide>
           <SwiperSlide> <Card/> </SwiperSlide>
-          <div className="rockets__pagination swiper-pagination"></div>
+
+          <div className="rockets__navigation swiper__nav">
+            {/* <div className="rockets__navigation-left"></div> */}
+            <div className="rockets__pagination swiper-pagination"></div>
+            {/* <div className="rockets__navigation-right"></div> */}
+          </div>
         </Swiper>
       </div>
 
-      <div className="rockets__navigation">
-        <div className="rockets__navigation-left"></div>
-        <div className="rockets__navigation-right"></div>
-      </div>
 
     </div>
   )

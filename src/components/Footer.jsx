@@ -1,15 +1,19 @@
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../styles/footer.scss';
+// import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export default function Footer() {
   return (
     <div className="footer">
       <Swiper
-        navigation
+        modules={[Navigation, Pagination]}
         pagination
+        navigation
         slidesPerView={1}
-        autoplay
       >
         <SwiperSlide className='footer__slide'>
           <div className="footer__img-bg">
@@ -44,6 +48,12 @@ export default function Footer() {
             </div>
           </div>
         </SwiperSlide>
+
+        {/* <div className="footer__navigation swiper__nav">
+          <div className="footer__navigation-left"></div>
+          <div className="footer__pagination swiper-pagination"></div>
+          <div className="footer__navigation-right"></div>
+        </div> */}
       </Swiper>
     </div>
   )

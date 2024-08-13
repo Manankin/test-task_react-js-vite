@@ -5,10 +5,10 @@ export default function Header() {
     <div className="header">
       <div className="header__btn">Logo</div>
       <div className="header__nav nav">
-        <span className="nav__link">Home</span>
-        <span className="nav__link">About</span>
-        <span className="nav__link">QA</span>
-        <span className="nav__link">Contact form</span>
+        <a href='' className="nav__link">Home</a>
+        <a href='' className="nav__link">About</a>
+        <a href='' className="nav__link">QA</a>
+        <a href='' className="nav__link">Contact form</a>
       </div>
       <div className="header__btn">Contacts Form</div>
     </div>
