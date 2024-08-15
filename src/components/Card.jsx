@@ -15,8 +15,8 @@ export default function Card({ data }) {
   return (
     <div className="card">
       <div className="card__image">
-        {/* <img src="https://farm8.staticflickr.com/7647/16581815487_6d56cb32e1_b.jpg" alt="rocket image" /> */}
-        <img src="../src/assets/rocketFrame.webp" alt="rocket image" />
+        <img src={data.flickr_images[0]} alt="rocket image" />
+        {/* <img src="../src/assets/rocketFrame.webp" alt="rocket image" /> */}
       </div>
       <div className="card__title">{name}</div>
       <div className="card__describe describe-list">

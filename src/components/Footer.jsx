@@ -2,15 +2,22 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../styles/footer.scss';
-// import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 export default function Footer() {
+  const {index} = useParams();
   const {loading, rockets} = useSelector((state) => {
     return state.rockets
   })
+
+  // console.log('====================================');
+  // console.log(rockets);
+  // console.log(index);
+  // console.log(rockets[index].flickr_images)
+  // console.log('====================================');
 
   return (
     <div className="footer">
@@ -33,21 +40,8 @@ export default function Footer() {
                 </div>
               </div>
             </SwiperSlide>
-          )
-        })
-
+          )})
         }
-        <SwiperSlide className='footer__slide'>
-          <div className="footer__img-bg">
-            <img src="../src/assets/rocketImage.webp" alt="slide #1" />
-          </div>
-          <div className="footer__slide-info">
-            <div className="footer__title">STARSHIP <br />CAPABILITIES</div>
-            <div className="footer__describe">
-              As the most powerful launch system ever developed, Starship will be able to carry up to 100 people on long-duration, interplanetary flights. Starship will also help enable satellite delivery, the development of a Moon base, and point-to-point transport here on Earth.
-            </div>
-          </div>
-        </SwiperSlide>
       </Swiper>
     </div>
   )

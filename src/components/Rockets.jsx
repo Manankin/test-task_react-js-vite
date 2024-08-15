@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-import BigCard from './BigCard';
 
 export default function Rockets() {
   const {loading, rockets} = useSelector((state) => {
@@ -37,7 +36,7 @@ export default function Rockets() {
           {rockets.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <Link to='/rocket-info' element={<BigCard index={index} />}>
+                <Link to={`/rocket-info/${index}`}>
                   <Card data={item}/>
                 </Link>
               </SwiperSlide>

@@ -15,7 +15,7 @@ export default function App() {
         <Route path='/about' element={<NotFoundPage />} />
         <Route path='/qa' element={<NotFoundPage />} />
         <Route path='/contact' element={<NotFoundPage />} />
-        <Route path='/rocket-info' element={<AboutRocket />} />
+        <Route path='/rocket-info/:index' element={<AboutRocket />} />
 
 
         <Route path='*' element={<NotFoundPage />} />
