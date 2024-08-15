@@ -1,24 +1,12 @@
 import './styles/App.scss'
-import { useEffect } from 'react'
-import { useState } from 'react'
 import { Routes, Route} from 'react-router-dom'
-import getData from './features/getData'
 import Main from './components/Main'
-import NotFoundPage from './components/AboutRocket'
 import AboutRocket from './components/AboutRocket'
+import NotFoundPage from './components/NotFoundPage'
+// import { fetchRockets } from './store/action'
 
 export default function App() {
-  const [response, setResponse] = useState(null)
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    getData().then(data => {
-      setResponse(data);
-      setIsLoaded(true);
-    });
-  }, []);
-
-  console.log(response);
+  // const dispatch = useDispatch();
 
   return (
     <div className='page'>

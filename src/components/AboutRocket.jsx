@@ -5,7 +5,7 @@ import Header from "./Header";
 export default function AboutRocket() {
   return (
     <>
-      <div className="empty-page">
+      <div className="rocket-page">
         <Header/>
         {/* <div className="empty-page__info"></div> */}
         <BigCard />

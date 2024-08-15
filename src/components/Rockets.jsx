@@ -4,11 +4,21 @@ import 'swiper/css/pagination';
 import '../styles/rockets.scss';
 
 import Card from './Card';
+import { useSelector } from 'react-redux';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
+import BigCard from './BigCard';
 
 export default function Rockets() {
+  const {loading, rockets} = useSelector((state) => {
+    return state.rockets
+  })
+
+  console.log('====================================');
+  console.log(rockets);
+  console.log('====================================');
+
   return (
     <div className="rockets">
       <h2 className="rockets__title">Our rockets</h2>
@@ -24,36 +34,15 @@ export default function Rockets() {
             type: 'bullets',
           }}
         >
-          <SwiperSlide>
-            <Link to='/rocket-info'>
-              <Card/>
-            </Link>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Link to='/rocket-info'>
-              <Card/>
-            </Link>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Link to='/rocket-info'>
-              <Card/>
-            </Link>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Link to='/rocket-info'>
-              <Card/>
-            </Link>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Link to='/rocket-info'>
-              <Card/>
-            </Link>
-          </SwiperSlide>
-
+          {rockets.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <Link to='/rocket-info' element={<BigCard index={index} />}>
+                  <Card data={item}/>
+                </Link>
+              </SwiperSlide>
+            )
+          })}
 
           <div className="rockets__navigation swiper__nav">
             <div className="rockets__pagination swiper-pagination"></div>
