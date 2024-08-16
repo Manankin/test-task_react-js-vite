@@ -53,14 +53,14 @@
     cursor: pointer;
 
     &--left {
-      background-image: url('../assets/left.svg');
+      background-image: url('../../public/images/left.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
 
     &--right {
-      background-image: url('../assets/right.svg');
+      background-image: url('../../public/images/right.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

@@ -46,7 +46,7 @@ export default function AboutRocket() {
       <div className="footer">
         <div className="footer__slide">
           <div className="footer__img-bg">
-              <img src="../src/assets/rocketImage.webp" alt="slide #1" />
+              <img src="../public/images/rocketImage.webp" alt="slide #1" />
             </div>
             <div className="footer__slide-info to-bottom">
               <div className="footer__title">STARSHIP <br />CAPABILITIES</div>
