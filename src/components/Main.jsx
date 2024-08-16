@@ -16,10 +16,6 @@ export default function Main() {
     dispatch(fetchRockets())
   }, []);
 
-  // const {loading} = useSelector((state) => {
-  //   return state.rockets
-  // })
-
   return (
     <>
       <div className='main'>

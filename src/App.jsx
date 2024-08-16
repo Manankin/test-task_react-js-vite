@@ -3,10 +3,16 @@ import { Routes, Route} from 'react-router-dom'
 import Main from './components/Main'
 import AboutRocket from './components/AboutRocket'
 import NotFoundPage from './components/NotFoundPage'
-// import { fetchRockets } from './store/action'
+import { useDispatch } from 'react-redux'
+import { fetchRockets } from './store/action'
+import { useEffect } from 'react'
 
 export default function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRockets())
+  }, []);
 
   return (
     <div className='page'>

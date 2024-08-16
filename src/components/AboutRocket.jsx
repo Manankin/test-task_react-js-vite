@@ -11,12 +11,6 @@ export default function AboutRocket() {
     return state.rockets
   })
 
-  console.log('====================================');
-  console.log(rockets);
-  console.log(index);
-  console.log(rockets[index])
-  console.log('====================================');
-
   return (
     <>
       <div className="rocket-page">

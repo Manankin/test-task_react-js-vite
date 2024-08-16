@@ -5,19 +5,11 @@ import '../styles/footer.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 
 export default function Footer() {
-  const {index} = useParams();
   const {loading, rockets} = useSelector((state) => {
     return state.rockets
   })
-
-  // console.log('====================================');
-  // console.log(rockets);
-  // console.log(index);
-  // console.log(rockets[index].flickr_images)
-  // console.log('====================================');
 
   return (
     <div className="footer">

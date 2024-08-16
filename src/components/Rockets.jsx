@@ -14,10 +14,6 @@ export default function Rockets() {
     return state.rockets
   })
 
-  console.log('====================================');
-  console.log(rockets);
-  console.log('====================================');
-
   return (
     <div className="rockets">
       <h2 className="rockets__title">Our rockets</h2>
