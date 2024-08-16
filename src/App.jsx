@@ -23,7 +23,6 @@ export default function App() {
         <Route path='/contact' element={<NotFoundPage />} />
         <Route path='/rocket-info/:index' element={<AboutRocket />} />
 
-
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </div>

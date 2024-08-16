@@ -4,6 +4,7 @@ import Header from "./Header";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import rocketImage from '../images/rocketImage.webp';
 
 export default function AboutRocket() {
   const {index} = useParams();
@@ -46,7 +47,7 @@ export default function AboutRocket() {
       <div className="footer">
         <div className="footer__slide">
           <div className="footer__img-bg">
-              <img src="../public/images/rocketImage.webp" alt="slide #1" />
+              <img src={rocketImage} alt="slide #1" />
             </div>
             <div className="footer__slide-info to-bottom">
               <div className="footer__title">STARSHIP <br />CAPABILITIES</div>

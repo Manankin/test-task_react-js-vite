@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Manankin.github.io/test-task_react-js-vite",
+  "homepage": "https://Manankin.github.io/test-task_react-js-vite/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

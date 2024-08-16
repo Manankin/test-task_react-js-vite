@@ -1,7 +1,6 @@
-// import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import '../styles/bigCard.scss';
 import { useSelector } from 'react-redux';
+import rocketFrame from '../../public/images/rocketFrame.webp';
 
 export default function BigCard() {
   const { index } = useParams();
@@ -24,7 +23,7 @@ export default function BigCard() {
       <h2 className='bc-title'>{name}</h2>
       <div className="card card--xl">
         <div className="card__image--xl">
-          <img src="../public/images/rocketFrame.webp" alt="rocket image" />
+          <img src={rocketFrame} alt="rocket image" />
         </div>
         <div className="card__info">
           <div className="card__title">{name}</div>

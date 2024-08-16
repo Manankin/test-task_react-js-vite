@@ -16,7 +16,6 @@ export default function Card({ data }) {
     <div className="card">
       <div className="card__image">
         <img src={data.flickr_images[0]} alt="rocket image" />
-        {/* <img src="../src/assets/rocketFrame.webp" alt="rocket image" /> */}
       </div>
       <div className="card__title">{name}</div>
       <div className="card__describe describe-list">
