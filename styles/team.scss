@@ -1,0 +1,69 @@
+.team {
+  overflow-x: visible;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-wrap: wrap;
+
+    line-height: 24px;
+    color: #fff;
+  }
+
+  &__navigation {
+    margin-top: auto;
+  }
+
+  &__members {
+    margin-right: -60px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow: hidden;
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 12px;
+
+  &__btn {
+    width: 126px;
+    height: 126px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &--left {
+      background-image: url('../../public/images/left.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--right {
+      background-image: url('../../public/images/right.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

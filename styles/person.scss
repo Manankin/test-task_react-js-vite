@@ -1,0 +1,35 @@
+.person {
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  width: fit-content;
+
+
+  &__image img {
+    border-radius: 40px;
+    width: 420px;
+    height: auto;
+  }
+
+  &__info {
+    font-family: 'Ribuk', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__position {
+    font-size: 12px;
+    line-height: 200%;
+    color:  rgba(255, 255, 255, 0.5);
+  }
+
+  &__name {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 171%;
+  }
+}
