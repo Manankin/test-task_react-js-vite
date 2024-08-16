@@ -4,7 +4,7 @@ export default function PersonCard() {
   return (
     <div className="person">
       <div className="person__photo">
-        <img src="../public/images/photo.webp" alt="" />
+        <img src="./public/images/photo.webp" alt="teammate photo" />
       </div>
       <div className="person__info">
         <div className="person__position">st.mechanic</div>
