@@ -9,7 +9,7 @@ import './index.scss'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/test-task_react-js-vite/'>
         <App />
       </BrowserRouter>
     </Provider>
